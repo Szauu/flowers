@@ -1,1 +1,14 @@
+server:
+  port: 5400
+
+servlet:
+  context-path: /api
+
+datasource:
+  url: jdbc:postgresql://localhost:5432/flowers
+    username: postgres
+    password: Postgre1992
+
+
+
 

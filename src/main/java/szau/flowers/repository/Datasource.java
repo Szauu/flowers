@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Bean;
 
 
 @ConfigurationProperties("datasource")
-public class Repository {
+public class Datasource {
 
     public HikariDataSource hikariDataSource(){
         return DataSourceBuilder.create().type(HikariDataSource.class).build();
