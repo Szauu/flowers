@@ -5,7 +5,7 @@ import java.util.UUID;
 
 public class Flower {
 
-    private final UUID uuid;
+    private final UUID flowerId;
     private final String name;
     private final String kind;
     private final LocalDate purchaseDate;
@@ -13,8 +13,8 @@ public class Flower {
     private final Integer daysFromLastWatering;
     private final LocalDate nextWateringDate;
 
-    public Flower(UUID uuid, String name, String kind, LocalDate purchaseDate, LocalDate wateringDate, Integer daysFromLastWatering, LocalDate nextWateringDate) {
-        this.uuid = uuid;
+    public Flower(UUID flowerId, String name, String kind, LocalDate purchaseDate, LocalDate wateringDate, Integer daysFromLastWatering, LocalDate nextWateringDate) {
+        this.flowerId = flowerId;
         this.name = name;
         this.kind = kind;
         this.purchaseDate = purchaseDate;
@@ -23,8 +23,8 @@ public class Flower {
         this.nextWateringDate = nextWateringDate;
     }
 
-    public UUID getUuid() {
-        return uuid;
+    public UUID getFlowerId() {
+        return flowerId;
     }
 
     public String getName() {
@@ -54,7 +54,7 @@ public class Flower {
     @Override
     public String toString() {
         return "Flower{" +
-                "uuid=" + uuid +
+                "uuid=" + flowerId +
                 ", name='" + name + '\'' +
                 ", kind='" + kind + '\'' +
                 ", purchaseDate=" + purchaseDate +
